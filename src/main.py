@@ -6,12 +6,12 @@ from solvers import jacobi, gauss_seidel, sor, apply_boundary_conditions
 # --------------------------------
 # User Input
 # --------------------------------
-print("2D Laplace Equation Solver using Iterative Methods")
+print("\n2D Laplace Equation Solver using Iterative Methods\n")
 
-N = int(input("Enter grid size N (e.g. 50): "))
-max_iter = int(input("Enter maximum iterations (e.g. 5000): "))
-tol = float(input("Enter tolerance (e.g. 1e-6): "))
-omega = float(input("Enter SOR relaxation factor omega (e.g. 1.7): "))
+N = int(input("\nEnter grid size N (e.g. 50): "))
+max_iter = int(input("\nEnter maximum iterations (e.g. 5000): "))
+tol = float(input("\nEnter tolerance (e.g. 1e-6): "))
+omega = float(input("\nEnter SOR relaxation factor omega (e.g. 1.7): "))
 
 # --------------------------------
 # Initial Grid
