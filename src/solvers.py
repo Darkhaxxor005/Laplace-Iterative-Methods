@@ -31,7 +31,7 @@ def apply_boundary_conditions(u):
     return u
 
 
-def jacobi(u, max_iter=5000, tol=1e-6): # Defaut values I used.
+def jacobi(u, max_iter, tol):
     
     #Solve 2D Laplace equation using the Jacobi iterative method.
 
@@ -57,7 +57,7 @@ def jacobi(u, max_iter=5000, tol=1e-6): # Defaut values I used.
     return u, errors
 
 
-def gauss_seidel(u, max_iter=5000, tol=1e-6): # Defaut values I used.
+def gauss_seidel(u, max_iter, tol):
 
     #Solve 2D Laplace equation using the Gauss-Seidel method.
 
@@ -84,7 +84,7 @@ def gauss_seidel(u, max_iter=5000, tol=1e-6): # Defaut values I used.
     return u, errors
 
 
-def sor(u, omega=1.5, max_iter=5000, tol=1e-6): # Defaut values I used.
+def sor(u, omega, max_iter=, tol=):
 
     #Solve 2D Laplace equation using the SOR method.
 
