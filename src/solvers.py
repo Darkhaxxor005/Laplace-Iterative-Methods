@@ -84,7 +84,7 @@ def gauss_seidel(u, max_iter, tol):
     return u, errors
 
 
-def sor(u, omega, max_iter=, tol=):
+def sor(u, omega, max_iter, tol):
 
     #Solve 2D Laplace equation using the SOR method.
 
