@@ -56,9 +56,9 @@ During execution, the user provides:
 ```text
 The tol input structre means
 
-1e-3 → 0.001 
-1e-6 → 0.000001
-1e-8 → 0.00000001
+1e-3 → 0.001 [ne-3 → 0.00n]
+1e-6 → 0.000001 [ne-6 → 0.00000n]
+1e-8 → 0.00000001 [ne-8 → 0.0000000n]
 ```
 
 These parameters control accuracy and convergence behavior.
