@@ -8,10 +8,10 @@ from solvers import jacobi, gauss_seidel, sor, apply_boundary_conditions
 # --------------------------------
 print("\n2D Laplace Equation Solver using Iterative Methods\n")
 
-N = int(input("\nEnter grid size N (e.g. 50): "))
-max_iter = int(input("\nEnter maximum iterations (e.g. 5000): "))
-tol = float(input("\nEnter tolerance (e.g. 1e-6): "))
-omega = float(input("\nEnter SOR relaxation factor omega (e.g. 1.7): "))
+N = int(input("\n[-]Enter grid size N (e.g. 50): "))
+max_iter = int(input("\n[-]Enter maximum iterations (e.g. 5000): "))
+tol = float(input("\n[-]Enter tolerance (e.g. 1e-6): "))
+omega = float(input("\n[-]Enter SOR relaxation factor omega (e.g. 1.7): "))
 
 # --------------------------------
 # Initial Grid
@@ -29,9 +29,18 @@ u_sor, err_sor = sor(u0.copy(), omega, max_iter, tol)
 # --------------------------------------------------
 # Iteration Counts 
 # --------------------------------------------------
-print(f"\n\n[-]Jacobi converged in {len(err_j)} iterations")
-print(f"\n[-]Gauss-Seidel converged in {len(err_gs)} iterations")
-print(f"\n[-]SOR converged in {len(err_sor)} iterations")
+def check_convergence(method_name, errors):
+    if len(errors) >= max_iter:
+        print("\n")
+        print(f"\n[WARNING] {method_name} failed to reach the required result in {max_iter} iterations")
+    else:
+        print(f"\n[INFO] {method_name} converged in {len(errors)} iterations")
+
+
+check_convergence("Jacobi", err_j)
+check_convergence("Gauss-Seidel", err_gs)
+check_convergence("SOR", err_sor)
+print("\n")
 
 # --------------------------------
 # Plotting Results
