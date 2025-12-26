@@ -15,15 +15,17 @@ Finite difference discretization with Dirichlet boundary conditions is used.
 
 ## Project Structure
 
+```text
 Laplace-Iterative-Methods/
-'''├── src/
+├── src/
 │   ├── solvers.py
 │   └── main.py
 ├── results/
 │   └── plots/
 ├── README.md
-├── requirements.txt
-'''
+├── requirements.txt 
+```
+
 
 ---
 
