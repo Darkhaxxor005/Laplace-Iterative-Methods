@@ -26,6 +26,13 @@ u_jacobi, err_j = jacobi(u0.copy(), max_iter, tol)
 u_gs, err_gs = gauss_seidel(u0.copy(), max_iter, tol)
 u_sor, err_sor = sor(u0.copy(), omega, max_iter, tol)
 
+# --------------------------------------------------
+# Iteration Counts 
+# --------------------------------------------------
+print(f"\n\n[-]Jacobi converged in {len(err_j)} iterations")
+print(f"\n[-]Gauss-Seidel converged in {len(err_gs)} iterations")
+print(f"\n[-]SOR converged in {len(err_sor)} iterations")
+
 # --------------------------------
 # Plotting Results
 # --------------------------------
