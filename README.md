@@ -53,6 +53,14 @@ During execution, the user provides:
 - Convergence tolerance `tol`
 - SOR relaxation factor `omega`
 
+```text
+The tol input structre means
+
+1e-3 → 0.001 
+1e-6 → 0.000001
+1e-8 → 0.00000001
+```
+
 These parameters control accuracy and convergence behavior.
 
 ---
