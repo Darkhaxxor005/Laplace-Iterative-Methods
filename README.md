@@ -33,15 +33,15 @@ Laplace-Iterative-Methods/
 
 Install dependencies:
 
-'''text
+```text
 pip install -r requirements.txt
-'''
+```
 
 Run the program:
 
-'''text
+```text
 python src/main.py
-'''
+```
 
 ---
 
