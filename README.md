@@ -82,3 +82,25 @@ The program generates:
 - SOR converges fastest  
 
 Results are consistent with theoretical expectations.
+
+---
+
+## Libraries Used
+
+This project is implemented in Python and uses the following libraries:
+
+### 1. NumPy
+- Used for numerical computations
+- Stores the 2D grid as arrays
+- Used to compute error norms for convergence checking
+
+### 2. Matplotlib
+- Used for visualization
+- Generates:
+  - Error vs iteration convergence plots
+  - Heatmap of the steady-state potential distribution
+
+## Python Version
+- Python 3.8 or higher is recommended
+- I used Python 3.13.9
+
